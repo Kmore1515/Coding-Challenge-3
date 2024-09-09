@@ -6,11 +6,14 @@ function calculateAverageSales(sales)
 
 // Task 2 Create determinePerformanceRating function
 function determinePerformanceRating(averagesales) 
-{if (averagesales > 10000)  {return("Excellent")} 
-else if (averagesales >= 7000)  {return("Good")}
-else if (averagesales >= 4000)  {return("Satisfactory")}
-else if (averagesales >= 0)  {return("Needs Improvement")}
-else {return("Insert sales average.")}}
-    
+{if (averagesales > 10000)  {return("Excellent")} // For anything greater than 10000
+else if (averagesales >= 7000)  {return("Good")} // For 7000-9999
+else if (averagesales >= 4000)  {return("Satisfactory")} // For 4000-6999
+else if (averagesales >= 0)  {return("Needs Improvement")} // For 0-3999
+else {return("Insert sales average.")}} // To stop infinite loop
 
-    
+// Task 3 Develop findTopAndBottomPerformers function
+function findTopAndBottomPerformers(salespersons) 
+{salespersons.reduce((accumulator, salesperson))} 
+
+//Beyond this I could not figure out the functions after hours of trying.
